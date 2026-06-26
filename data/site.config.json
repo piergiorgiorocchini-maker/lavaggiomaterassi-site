@@ -1,0 +1,44 @@
+{
+  "brand": "LavaggioMaterassi",
+  "displayBrand": "Lavaggio Materassi a Domicilio",
+  "ownerName": "Piergiorgio Rocchini",
+  "businessLegalName": "Impresa la Nuvola Azzurra di Piergiorgio Rocchini",
+  "businessAddress": {
+    "streetAddress": "Via Enrico Fermi 1/a",
+    "postalCode": "09010",
+    "city": "Gonnesa",
+    "province": "SU",
+    "region": "Sardegna",
+    "country": "IT"
+  },
+  "phoneDisplay": "+39 351 655 0908",
+  "phoneHref": "+393516550908",
+  "whatsappNumber": "393516550908",
+  "whatsappUrl": "https://wa.me/393516550908?text=Ciao%20Piergiorgio%2C%20vorrei%20un%20preventivo%20per%20lavaggio%20materassi%20a%20domicilio.%20Posso%20inviarti%20alcune%20foto%3F",
+  "whatsappDefaultText": "Ciao Piergiorgio, vorrei un preventivo per lavaggio materassi a domicilio. Posso inviarti alcune foto?",
+  "email": "lanuvolazzurra@gmail.com",
+  "vatId": "03834620928",
+  "vatIdSchema": "IT03834620928",
+  "domain": "lavaggiomaterassi.com",
+  "baseUrl": "https://www.lavaggiomaterassi.com",
+  "region": "Sardegna",
+  "primaryService": "lavaggio materassi a domicilio",
+  "secondaryServices": [
+    "igienizzazione materassi",
+    "rimozione acari materasso",
+    "lavaggio divani a domicilio",
+    "pulizia tappeti a domicilio",
+    "lavaggio moquette a domicilio"
+  ],
+  "experienceText": "oltre 10 anni nel trattamento di pulizia professionale dei tessili a domicilio",
+  "poweredByName": "RevenueCraftedStudio",
+  "poweredByUrl": "https://revenuecraftedstudio.com/",
+  "trackingConfigPath": "/data/tracking.config.json",
+  "trackingScriptPath": "/assets/js/tracking.js",
+  "notes": {
+    "legalAddressVisibility": "Usare businessLegalName e businessAddress solo nei Termini e Condizioni, salvo diversa richiesta.",
+    "canonicalPolicy": "Usare URL canonici con https://www.lavaggiomaterassi.com",
+    "legacyLocationsStatus": "data/locations.json pensionato; usare data/geo.sardegna.json per la struttura geografica futura.",
+    "yachtSectionPolicy": "La sezione yacht resta nel progetto e sarà adattata in una fase successiva. Non eliminarla durante la materassizzazione della base."
+  }
+}

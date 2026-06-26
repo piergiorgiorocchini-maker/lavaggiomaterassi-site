@@ -1,0 +1,1748 @@
+{
+  "_schema": "LocalSeoGeoRegion.v1",
+  "_file": "data/geo.sardegna.json",
+  "_status": "production-expanded-tourism",
+  "_purpose": "Reusable geography engine for local SEO page generation, expanded with high-value tourist and coastal localities.",
+  "_lastUpdated": "2026-06-18",
+  "_dataPolicy": {
+    "principle": "Keep geography separate from services. A cleaning, dental, legal, roofing, beauty or other local-service site can reuse this same file.",
+    "officialAreas": "Administrative layer based on current Sardegna province/città metropolitana structure.",
+    "commercialSeoHubs": "Search-intent layer. These hubs may use common commercial language even when it does not exactly match the official administrative structure.",
+    "municipalities": "Priority municipalities and high-value tourist localities, not a complete 377-comune registry.",
+    "doNotUseLegacyFile": "data/locations.json is retired and must not be used for generation."
+  },
+  "region": {
+    "name": "Sardegna",
+    "slug": "sardegna",
+    "country": "Italia",
+    "countryCode": "IT",
+    "language": "it-IT",
+    "geoRegion": "IT-88",
+    "istatRegionCode": "20"
+  },
+  "officialAdministrativeAreas": [
+    {
+      "id": "cm-cagliari",
+      "type": "citta_metropolitana",
+      "officialName": "Città Metropolitana di Cagliari",
+      "displayName": "Cagliari e area metropolitana",
+      "slug": "cagliari",
+      "istatAreaCode": "318",
+      "legacyOrSourceAreaCodes": [
+        "118",
+        "292"
+      ],
+      "capitalOrMainCities": [
+        "Cagliari"
+      ],
+      "municipalityCount": 70,
+      "notes": "Area ufficiale aggiornata; usare anche come hub commerciale principale per Sud Sardegna urbano."
+    },
+    {
+      "id": "cm-sassari",
+      "type": "citta_metropolitana",
+      "officialName": "Città Metropolitana di Sassari",
+      "displayName": "Sassari e Nord-Ovest Sardegna",
+      "slug": "sassari",
+      "istatAreaCode": "312",
+      "legacyOrSourceAreaCodes": [
+        "112"
+      ],
+      "capitalOrMainCities": [
+        "Sassari",
+        "Alghero"
+      ],
+      "municipalityCount": 66,
+      "notes": "Hub commerciale naturale per Sassari, Alghero e Nord-Ovest."
+    },
+    {
+      "id": "prov-gallura-nord-est",
+      "type": "provincia",
+      "officialName": "Provincia della Gallura Nord-Est Sardegna",
+      "displayName": "Gallura e Nord-Est Sardegna",
+      "slug": "gallura-nord-est-sardegna",
+      "istatAreaCode": "113",
+      "legacyOrSourceAreaCodes": [
+        "112"
+      ],
+      "capitalOrMainCities": [
+        "Olbia",
+        "Tempio Pausania"
+      ],
+      "municipalityCount": 26,
+      "notes": "Per SEO usare spesso anche hub Olbia-Gallura."
+    },
+    {
+      "id": "prov-nuoro",
+      "type": "provincia",
+      "officialName": "Provincia di Nuoro",
+      "displayName": "Nuoro e Barbagia",
+      "slug": "nuoro",
+      "istatAreaCode": "114",
+      "legacyOrSourceAreaCodes": [
+        "091"
+      ],
+      "capitalOrMainCities": [
+        "Nuoro"
+      ],
+      "municipalityCount": 53,
+      "notes": "Hub utile per Nuoro, Barbagia e centro Sardegna."
+    },
+    {
+      "id": "prov-oristano",
+      "type": "provincia",
+      "officialName": "Provincia di Oristano",
+      "displayName": "Oristano e provincia",
+      "slug": "oristano",
+      "istatAreaCode": "115",
+      "legacyOrSourceAreaCodes": [
+        "095"
+      ],
+      "capitalOrMainCities": [
+        "Oristano"
+      ],
+      "municipalityCount": 87,
+      "notes": "Hub naturale per Oristano, Sinis, Guilcier, Marmilla oristanese."
+    },
+    {
+      "id": "prov-ogliastra",
+      "type": "provincia",
+      "officialName": "Provincia dell'Ogliastra",
+      "displayName": "Ogliastra",
+      "slug": "ogliastra",
+      "istatAreaCode": "116",
+      "legacyOrSourceAreaCodes": [
+        "091"
+      ],
+      "capitalOrMainCities": [
+        "Lanusei",
+        "Tortolì"
+      ],
+      "municipalityCount": 23,
+      "notes": "Hub utile per Tortolì, Lanusei e costa centro-orientale."
+    },
+    {
+      "id": "prov-medio-campidano",
+      "type": "provincia",
+      "officialName": "Provincia del Medio Campidano",
+      "displayName": "Medio Campidano",
+      "slug": "medio-campidano",
+      "istatAreaCode": "117",
+      "legacyOrSourceAreaCodes": [
+        "111"
+      ],
+      "capitalOrMainCities": [
+        "Sanluri",
+        "Villacidro"
+      ],
+      "municipalityCount": 28,
+      "notes": "Hub commerciale per Campidano interno; non confondere con la vecchia Provincia del Sud Sardegna."
+    },
+    {
+      "id": "prov-sulcis-iglesiente",
+      "type": "provincia",
+      "officialName": "Provincia del Sulcis Iglesiente",
+      "displayName": "Sulcis Iglesiente",
+      "slug": "sulcis-iglesiente",
+      "istatAreaCode": "119",
+      "legacyOrSourceAreaCodes": [
+        "111"
+      ],
+      "capitalOrMainCities": [
+        "Carbonia",
+        "Iglesias"
+      ],
+      "municipalityCount": 24,
+      "notes": "Hub utile per Sulcis, Iglesiente e area sud-occidentale."
+    }
+  ],
+  "commercialSeoHubs": [
+    {
+      "id": "hub-cagliari",
+      "hubType": "provincial_or_metropolitan",
+      "name": "Cagliari",
+      "slug": "cagliari",
+      "urlSegmentPattern": "{service-slug}-cagliari",
+      "displayTitlePattern": "{Service Name} a Cagliari e provincia",
+      "h1Pattern": "{Service Name} a domicilio a Cagliari e provincia",
+      "officialAreaIds": [
+        "cm-cagliari"
+      ],
+      "priority": 100,
+      "intentNotes": "Primo hub da generare. Include Cagliari città, hinterland e comuni vicini con forte domanda locale."
+    },
+    {
+      "id": "hub-costa-smeralda",
+      "hubType": "premium_tourism_area",
+      "name": "Costa Smeralda",
+      "slug": "costa-smeralda",
+      "urlSegmentPattern": "{service-slug}-costa-smeralda",
+      "displayTitlePattern": "{Service Name} in Costa Smeralda",
+      "h1Pattern": "{Service Name} a domicilio in Costa Smeralda",
+      "officialAreaIds": [
+        "prov-gallura-nord-est"
+      ],
+      "priority": 93,
+      "intentNotes": "Hub commerciale premium per Costa Smeralda, ville, case vacanza, strutture ricettive e località turistiche ad alta domanda."
+    },
+    {
+      "id": "hub-sassari",
+      "hubType": "provincial_or_metropolitan",
+      "name": "Sassari",
+      "slug": "sassari",
+      "urlSegmentPattern": "{service-slug}-sassari",
+      "displayTitlePattern": "{Service Name} a Sassari e provincia",
+      "h1Pattern": "{Service Name} a domicilio a Sassari e provincia",
+      "officialAreaIds": [
+        "cm-sassari"
+      ],
+      "priority": 90,
+      "intentNotes": "Hub Nord-Ovest; può includere sotto-cluster Alghero."
+    },
+    {
+      "id": "hub-olbia-gallura",
+      "hubType": "commercial_area",
+      "name": "Olbia e Gallura",
+      "slug": "olbia-gallura",
+      "urlSegmentPattern": "{service-slug}-olbia-gallura",
+      "displayTitlePattern": "{Service Name} a Olbia e Gallura",
+      "h1Pattern": "{Service Name} a domicilio a Olbia e in Gallura",
+      "officialAreaIds": [
+        "prov-gallura-nord-est"
+      ],
+      "priority": 88,
+      "intentNotes": "Usare Olbia-Gallura per maggiore chiarezza commerciale rispetto al solo nome ufficiale."
+    },
+    {
+      "id": "hub-oristano",
+      "hubType": "provincial",
+      "name": "Oristano",
+      "slug": "oristano",
+      "urlSegmentPattern": "{service-slug}-oristano",
+      "displayTitlePattern": "{Service Name} a Oristano e provincia",
+      "h1Pattern": "{Service Name} a domicilio a Oristano e provincia",
+      "officialAreaIds": [
+        "prov-oristano"
+      ],
+      "priority": 80,
+      "intentNotes": "Hub per Oristano e costa centro-occidentale."
+    },
+    {
+      "id": "hub-nuoro",
+      "hubType": "provincial",
+      "name": "Nuoro",
+      "slug": "nuoro",
+      "urlSegmentPattern": "{service-slug}-nuoro",
+      "displayTitlePattern": "{Service Name} a Nuoro e provincia",
+      "h1Pattern": "{Service Name} a domicilio a Nuoro e provincia",
+      "officialAreaIds": [
+        "prov-nuoro"
+      ],
+      "priority": 78,
+      "intentNotes": "Hub centro Sardegna."
+    },
+    {
+      "id": "hub-ogliastra",
+      "hubType": "provincial",
+      "name": "Ogliastra",
+      "slug": "ogliastra",
+      "urlSegmentPattern": "{service-slug}-ogliastra",
+      "displayTitlePattern": "{Service Name} in Ogliastra",
+      "h1Pattern": "{Service Name} a domicilio in Ogliastra",
+      "officialAreaIds": [
+        "prov-ogliastra"
+      ],
+      "priority": 70,
+      "intentNotes": "Hub dedicato a Tortolì, Lanusei e costa ogliastrina."
+    },
+    {
+      "id": "hub-sulcis-iglesiente",
+      "hubType": "provincial",
+      "name": "Sulcis Iglesiente",
+      "slug": "sulcis-iglesiente",
+      "urlSegmentPattern": "{service-slug}-sulcis-iglesiente",
+      "displayTitlePattern": "{Service Name} nel Sulcis Iglesiente",
+      "h1Pattern": "{Service Name} a domicilio nel Sulcis Iglesiente",
+      "officialAreaIds": [
+        "prov-sulcis-iglesiente"
+      ],
+      "priority": 68,
+      "intentNotes": "Hub sud-ovest: Carbonia, Iglesias, Gonnesa, Sant'Antioco, Carloforte."
+    },
+    {
+      "id": "hub-medio-campidano",
+      "hubType": "provincial",
+      "name": "Medio Campidano",
+      "slug": "medio-campidano",
+      "urlSegmentPattern": "{service-slug}-medio-campidano",
+      "displayTitlePattern": "{Service Name} nel Medio Campidano",
+      "h1Pattern": "{Service Name} a domicilio nel Medio Campidano",
+      "officialAreaIds": [
+        "prov-medio-campidano"
+      ],
+      "priority": 65,
+      "intentNotes": "Hub per Sanluri, Villacidro e Campidano interno."
+    },
+    {
+      "id": "hub-sud-sardegna-commerciale",
+      "hubType": "legacy_commercial_area",
+      "name": "Sud Sardegna",
+      "slug": "sud-sardegna",
+      "urlSegmentPattern": "{service-slug}-sud-sardegna",
+      "displayTitlePattern": "{Service Name} nel Sud Sardegna",
+      "h1Pattern": "{Service Name} a domicilio nel Sud Sardegna",
+      "officialAreaIds": [
+        "cm-cagliari",
+        "prov-medio-campidano",
+        "prov-sulcis-iglesiente"
+      ],
+      "priority": 60,
+      "intentNotes": "Usare solo come hub SEO/commerciale, non come provincia ufficiale aggiornata."
+    }
+  ],
+  "pageGenerationRules": {
+    "regionalHome": {
+      "url": "/",
+      "titlePattern": "{Service Name} a domicilio in Sardegna | {Brand}",
+      "h1Pattern": "{Service Name} a domicilio in Sardegna"
+    },
+    "hubPage": {
+      "urlPattern": "/{service-slug}-{hub-slug}/",
+      "titlePattern": "{Service Name} a {hub-name} | {Brand}",
+      "h1Pattern": "{Service Name} a domicilio a {hub-name}",
+      "canonicalPattern": "https://www.{domain}/{service-slug}-{hub-slug}/"
+    },
+    "localityPage": {
+      "urlPattern": "/{service-slug}-a-domicilio-{municipality-slug}/",
+      "titlePattern": "{Service Name} a domicilio a {municipality-name} | {Brand}",
+      "h1Pattern": "{Service Name} a domicilio a {municipality-name}",
+      "canonicalPattern": "https://www.{domain}/{service-slug}-a-domicilio-{municipality-slug}/"
+    },
+    "slugRules": {
+      "lowercase": true,
+      "removeAccents": true,
+      "apostrophes": "remove",
+      "spaces": "hyphen",
+      "specialChars": "hyphen",
+      "maxRepeatedHyphens": 1
+    }
+  },
+  "priorityMunicipalities": [
+    {
+      "name": "Cagliari",
+      "slug": "cagliari",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 100,
+      "tags": [
+        "area metropolitana",
+        "capoluogo"
+      ],
+      "aliases": [
+        "Cagliari"
+      ],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-cagliari/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Cagliari"
+    },
+    {
+      "name": "Porto Cervo",
+      "slug": "porto-cervo",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 99,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "ville",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-porto-cervo/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Porto Cervo"
+    },
+    {
+      "name": "Porto Rotondo",
+      "slug": "porto-rotondo",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 97,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-porto-rotondo/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Porto Rotondo"
+    },
+    {
+      "name": "Quartu Sant'Elena",
+      "slug": "quartu-sant-elena",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 96,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [
+        "Quartu"
+      ],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-quartu-sant-elena/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Quartu Sant'Elena"
+    },
+    {
+      "name": "Baja Sardinia",
+      "slug": "baja-sardinia",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 95,
+      "tags": [
+        "costa smeralda",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [
+        "Baia Sardinia"
+      ],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-baja-sardinia/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Baja Sardinia"
+    },
+    {
+      "name": "Selargius",
+      "slug": "selargius",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 95,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-selargius/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Selargius"
+    },
+    {
+      "name": "Poltu Quatu",
+      "slug": "poltu-quatu",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 94,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "resort"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-poltu-quatu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Poltu Quatu"
+    },
+    {
+      "name": "Sassari",
+      "slug": "sassari",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 94,
+      "tags": [
+        "capoluogo",
+        "nord ovest"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sassari/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Sassari"
+    },
+    {
+      "name": "Cannigione",
+      "slug": "cannigione",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 93,
+      "tags": [
+        "costa smeralda",
+        "gallura",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-cannigione/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Cannigione"
+    },
+    {
+      "name": "Monserrato",
+      "slug": "monserrato",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 92,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-monserrato/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Monserrato"
+    },
+    {
+      "name": "Olbia",
+      "slug": "olbia",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-olbia-gallura",
+      "priority": 92,
+      "tags": [
+        "gallura",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-olbia/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Olbia"
+    },
+    {
+      "name": "San Pantaleo",
+      "slug": "san-pantaleo",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 92,
+      "tags": [
+        "costa smeralda",
+        "gallura",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-san-pantaleo/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a San Pantaleo"
+    },
+    {
+      "name": "Arzachena",
+      "slug": "arzachena",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 91,
+      "tags": [
+        "costa smeralda",
+        "turismo",
+        "gallura"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-arzachena/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Arzachena"
+    },
+    {
+      "name": "Golfo Aranci",
+      "slug": "golfo-aranci",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 91,
+      "tags": [
+        "gallura",
+        "turismo",
+        "costa nord-est"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-golfo-aranci/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Golfo Aranci"
+    },
+    {
+      "name": "Portisco",
+      "slug": "portisco",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 90,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "porto turistico"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-portisco/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Portisco"
+    },
+    {
+      "name": "San Teodoro",
+      "slug": "san-teodoro",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-olbia-gallura",
+      "priority": 90,
+      "tags": [
+        "gallura",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-san-teodoro/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a San Teodoro"
+    },
+    {
+      "name": "Sestu",
+      "slug": "sestu",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 90,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sestu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Sestu"
+    },
+    {
+      "name": "Assemini",
+      "slug": "assemini",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 89,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-assemini/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Assemini"
+    },
+    {
+      "name": "Cala di Volpe",
+      "slug": "cala-di-volpe",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 89,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "hotel",
+        "ville"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-cala-di-volpe/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Cala di Volpe"
+    },
+    {
+      "name": "Alghero",
+      "slug": "alghero",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 88,
+      "tags": [
+        "nord ovest",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-alghero/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Alghero"
+    },
+    {
+      "name": "Romazzino",
+      "slug": "romazzino",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 88,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "ville"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-romazzino/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Romazzino"
+    },
+    {
+      "name": "Villasimius",
+      "slug": "villasimius",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 88,
+      "tags": [
+        "costa sud",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-villasimius/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Villasimius"
+    },
+    {
+      "name": "Capriccioli",
+      "slug": "capriccioli",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 87,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "ville"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-capriccioli/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Capriccioli"
+    },
+    {
+      "name": "Stintino",
+      "slug": "stintino",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 87,
+      "tags": [
+        "nord ovest",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-stintino/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Stintino"
+    },
+    {
+      "name": "Budoni",
+      "slug": "budoni",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-olbia-gallura",
+      "priority": 86,
+      "tags": [
+        "gallura",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-budoni/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Budoni"
+    },
+    {
+      "name": "Costa Rei",
+      "slug": "costa-rei",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 86,
+      "tags": [
+        "costa sud",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-costa-rei/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Costa Rei"
+    },
+    {
+      "name": "Elmas",
+      "slug": "elmas",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 86,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-elmas/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Elmas"
+    },
+    {
+      "name": "Liscia di Vacca",
+      "slug": "liscia-di-vacca",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 86,
+      "tags": [
+        "costa smeralda",
+        "turismo premium",
+        "ville"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-liscia-di-vacca/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Liscia di Vacca"
+    },
+    {
+      "name": "Oristano",
+      "slug": "oristano",
+      "officialAreaId": "prov-oristano",
+      "primaryHubId": "hub-oristano",
+      "priority": 86,
+      "tags": [
+        "capoluogo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-oristano/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Oristano"
+    },
+    {
+      "name": "Abbiadori",
+      "slug": "abbiadori",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 85,
+      "tags": [
+        "costa smeralda",
+        "turismo",
+        "servizi"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-abbiadori/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Abbiadori"
+    },
+    {
+      "name": "Capoterra",
+      "slug": "capoterra",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 84,
+      "tags": [
+        "area cagliaritana"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-capoterra/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Capoterra"
+    },
+    {
+      "name": "Castelsardo",
+      "slug": "castelsardo",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 84,
+      "tags": [
+        "nord ovest",
+        "turismo",
+        "borgo costiero"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-castelsardo/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Castelsardo"
+    },
+    {
+      "name": "Chia",
+      "slug": "chia",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 84,
+      "tags": [
+        "costa sud",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-chia/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Chia"
+    },
+    {
+      "name": "Marinella",
+      "slug": "marinella",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 84,
+      "tags": [
+        "gallura",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-marinella/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Marinella"
+    },
+    {
+      "name": "Nuoro",
+      "slug": "nuoro",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 84,
+      "tags": [
+        "capoluogo",
+        "barbagia"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-nuoro/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Nuoro"
+    },
+    {
+      "name": "Pittulongu",
+      "slug": "pittulongu",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 83,
+      "tags": [
+        "olbia",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-pittulongu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Pittulongu"
+    },
+    {
+      "name": "Quartucciu",
+      "slug": "quartucciu",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 83,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-quartucciu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Quartucciu"
+    },
+    {
+      "name": "Muravera",
+      "slug": "muravera",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 82,
+      "tags": [
+        "costa sud",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-muravera/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Muravera"
+    },
+    {
+      "name": "Orosei",
+      "slug": "orosei",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 82,
+      "tags": [
+        "nuorese",
+        "costa orientale",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-orosei/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Orosei"
+    },
+    {
+      "name": "Palau",
+      "slug": "palau",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 82,
+      "tags": [
+        "gallura",
+        "turismo",
+        "costa nord-est"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-palau/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Palau"
+    },
+    {
+      "name": "Porto Torres",
+      "slug": "porto-torres",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 82,
+      "tags": [
+        "nord ovest",
+        "porto",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-porto-torres/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Porto Torres"
+    },
+    {
+      "name": "Porto Rafael",
+      "slug": "porto-rafael",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 81,
+      "tags": [
+        "gallura",
+        "turismo premium",
+        "ville"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-porto-rafael/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Porto Rafael"
+    },
+    {
+      "name": "Cala Gonone",
+      "slug": "cala-gonone",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 80,
+      "tags": [
+        "nuorese",
+        "costa orientale",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-cala-gonone/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Cala Gonone"
+    },
+    {
+      "name": "Castiadas",
+      "slug": "castiadas",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 80,
+      "tags": [
+        "costa sud",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-castiadas/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Castiadas"
+    },
+    {
+      "name": "La Maddalena",
+      "slug": "la-maddalena",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 80,
+      "tags": [
+        "gallura",
+        "isola",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-la-maddalena/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a La Maddalena"
+    },
+    {
+      "name": "Settimo San Pietro",
+      "slug": "settimo-san-pietro",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 80,
+      "tags": [
+        "hinterland cagliaritano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-settimo-san-pietro/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Settimo San Pietro"
+    },
+    {
+      "name": "Tortolì",
+      "slug": "tortoli",
+      "officialAreaId": "prov-ogliastra",
+      "primaryHubId": "hub-ogliastra",
+      "priority": 80,
+      "tags": [
+        "ogliastra",
+        "costa"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-tortoli/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Tortolì"
+    },
+    {
+      "name": "Santa Teresa Gallura",
+      "slug": "santa-teresa-gallura",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-costa-smeralda",
+      "priority": 79,
+      "tags": [
+        "gallura",
+        "turismo",
+        "costa nord"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-santa-teresa-gallura/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Santa Teresa Gallura"
+    },
+    {
+      "name": "Sinnai",
+      "slug": "sinnai",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 79,
+      "tags": [
+        "area cagliaritana"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sinnai/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Sinnai"
+    },
+    {
+      "name": "Arbatax",
+      "slug": "arbatax",
+      "officialAreaId": "prov-ogliastra",
+      "primaryHubId": "hub-ogliastra",
+      "priority": 78,
+      "tags": [
+        "ogliastra",
+        "costa",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-arbatax/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Arbatax"
+    },
+    {
+      "name": "Baunei",
+      "slug": "baunei",
+      "officialAreaId": "prov-ogliastra",
+      "primaryHubId": "hub-ogliastra",
+      "priority": 78,
+      "tags": [
+        "ogliastra",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-baunei/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Baunei"
+    },
+    {
+      "name": "Bosa",
+      "slug": "bosa",
+      "officialAreaId": "prov-oristano",
+      "primaryHubId": "hub-oristano",
+      "priority": 78,
+      "tags": [
+        "oristanese",
+        "turismo",
+        "borgo costiero"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-bosa/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Bosa"
+    },
+    {
+      "name": "Cabras",
+      "slug": "cabras",
+      "officialAreaId": "prov-oristano",
+      "primaryHubId": "hub-oristano",
+      "priority": 78,
+      "tags": [
+        "oristanese",
+        "sinis",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-cabras/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Cabras"
+    },
+    {
+      "name": "Cala Liberotto",
+      "slug": "cala-liberotto",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 78,
+      "tags": [
+        "nuorese",
+        "costa orientale",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-cala-liberotto/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Cala Liberotto"
+    },
+    {
+      "name": "Carbonia",
+      "slug": "carbonia",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 78,
+      "tags": [
+        "sulcis"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-carbonia/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Carbonia"
+    },
+    {
+      "name": "Domus de Maria",
+      "slug": "domus-de-maria",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 78,
+      "tags": [
+        "costa sud",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-domus-de-maria/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Domus de Maria"
+    },
+    {
+      "name": "Dorgali",
+      "slug": "dorgali",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 78,
+      "tags": [
+        "nuorese",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-dorgali/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Dorgali"
+    },
+    {
+      "name": "Fertilia",
+      "slug": "fertilia",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 78,
+      "tags": [
+        "alghero",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-fertilia/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Fertilia"
+    },
+    {
+      "name": "Iglesias",
+      "slug": "iglesias",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 78,
+      "tags": [
+        "iglesiente"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-iglesias/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Iglesias"
+    },
+    {
+      "name": "Santa Margherita di Pula",
+      "slug": "santa-margherita-di-pula",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 78,
+      "tags": [
+        "costa sud",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-santa-margherita-di-pula/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Santa Margherita di Pula"
+    },
+    {
+      "name": "Tempio Pausania",
+      "slug": "tempio-pausania",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-olbia-gallura",
+      "priority": 78,
+      "tags": [
+        "alta gallura"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-tempio-pausania/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Tempio Pausania"
+    },
+    {
+      "name": "Santa Maria Navarrese",
+      "slug": "santa-maria-navarrese",
+      "officialAreaId": "prov-ogliastra",
+      "primaryHubId": "hub-ogliastra",
+      "priority": 77,
+      "tags": [
+        "ogliastra",
+        "costa",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-santa-maria-navarrese/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Santa Maria Navarrese"
+    },
+    {
+      "name": "Siniscola",
+      "slug": "siniscola",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 77,
+      "tags": [
+        "nuorese",
+        "costa orientale"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-siniscola/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Siniscola"
+    },
+    {
+      "name": "Torre delle Stelle",
+      "slug": "torre-delle-stelle",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 77,
+      "tags": [
+        "costa sud",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-torre-delle-stelle/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Torre delle Stelle"
+    },
+    {
+      "name": "Isola Rossa",
+      "slug": "isola-rossa",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-olbia-gallura",
+      "priority": 76,
+      "tags": [
+        "gallura",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-isola-rossa/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Isola Rossa"
+    },
+    {
+      "name": "La Caletta",
+      "slug": "la-caletta",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 76,
+      "tags": [
+        "nuorese",
+        "costa orientale",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-la-caletta/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a La Caletta"
+    },
+    {
+      "name": "Maracalagonis",
+      "slug": "maracalagonis",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 76,
+      "tags": [
+        "area cagliaritana"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-maracalagonis/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Maracalagonis"
+    },
+    {
+      "name": "Porto Pino",
+      "slug": "porto-pino",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 76,
+      "tags": [
+        "sulcis",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-porto-pino/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Porto Pino"
+    },
+    {
+      "name": "Posada",
+      "slug": "posada",
+      "officialAreaId": "prov-nuoro",
+      "primaryHubId": "hub-nuoro",
+      "priority": 76,
+      "tags": [
+        "nuorese",
+        "turismo",
+        "borgo costiero"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-posada/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Posada"
+    },
+    {
+      "name": "Sanluri",
+      "slug": "sanluri",
+      "officialAreaId": "prov-medio-campidano",
+      "primaryHubId": "hub-medio-campidano",
+      "priority": 76,
+      "tags": [
+        "medio campidano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sanluri/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Sanluri"
+    },
+    {
+      "name": "Sorso",
+      "slug": "sorso",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 76,
+      "tags": [
+        "nord ovest",
+        "costa"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sorso/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Sorso"
+    },
+    {
+      "name": "Teulada",
+      "slug": "teulada",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 76,
+      "tags": [
+        "sulcis",
+        "costa sud",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-teulada/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Teulada"
+    },
+    {
+      "name": "Torre Grande",
+      "slug": "torre-grande",
+      "officialAreaId": "prov-oristano",
+      "primaryHubId": "hub-oristano",
+      "priority": 76,
+      "tags": [
+        "oristanese",
+        "sinis",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-torre-grande/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Torre Grande"
+    },
+    {
+      "name": "Valledoria",
+      "slug": "valledoria",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 76,
+      "tags": [
+        "nord ovest",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-valledoria/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Valledoria"
+    },
+    {
+      "name": "Villacidro",
+      "slug": "villacidro",
+      "officialAreaId": "prov-medio-campidano",
+      "primaryHubId": "hub-medio-campidano",
+      "priority": 76,
+      "tags": [
+        "medio campidano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-villacidro/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Villacidro"
+    },
+    {
+      "name": "Badesi",
+      "slug": "badesi",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 75,
+      "tags": [
+        "nord ovest",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-badesi/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Badesi"
+    },
+    {
+      "name": "Decimomannu",
+      "slug": "decimomannu",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 75,
+      "tags": [
+        "area cagliaritana"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-decimomannu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Decimomannu"
+    },
+    {
+      "name": "Bari Sardo",
+      "slug": "bari-sardo",
+      "officialAreaId": "prov-ogliastra",
+      "primaryHubId": "hub-ogliastra",
+      "priority": 74,
+      "tags": [
+        "ogliastra",
+        "costa"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-bari-sardo/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Bari Sardo"
+    },
+    {
+      "name": "Calasetta",
+      "slug": "calasetta",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 74,
+      "tags": [
+        "sulcis",
+        "turismo",
+        "costa"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-calasetta/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Calasetta"
+    },
+    {
+      "name": "Gonnesa",
+      "slug": "gonnesa",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 74,
+      "tags": [
+        "sulcis",
+        "base operativa"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-gonnesa/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Gonnesa"
+    },
+    {
+      "name": "Lanusei",
+      "slug": "lanusei",
+      "officialAreaId": "prov-ogliastra",
+      "primaryHubId": "hub-ogliastra",
+      "priority": 74,
+      "tags": [
+        "ogliastra"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-lanusei/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Lanusei"
+    },
+    {
+      "name": "Putzu Idu",
+      "slug": "putzu-idu",
+      "officialAreaId": "prov-oristano",
+      "primaryHubId": "hub-oristano",
+      "priority": 74,
+      "tags": [
+        "oristanese",
+        "sinis",
+        "turismo",
+        "case vacanza"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-putzu-idu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Putzu Idu"
+    },
+    {
+      "name": "Solanas",
+      "slug": "solanas",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 74,
+      "tags": [
+        "costa sud",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-solanas/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Solanas"
+    },
+    {
+      "name": "Trinità d'Agultu e Vignola",
+      "slug": "trinita-dagultu-e-vignola",
+      "officialAreaId": "prov-gallura-nord-est",
+      "primaryHubId": "hub-olbia-gallura",
+      "priority": 74,
+      "tags": [
+        "gallura",
+        "turismo"
+      ],
+      "aliases": [
+        "Trinità d'Agultu"
+      ],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-trinita-dagultu-e-vignola/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Trinità d'Agultu e Vignola"
+    },
+    {
+      "name": "Cardedu",
+      "slug": "cardedu",
+      "officialAreaId": "prov-ogliastra",
+      "primaryHubId": "hub-ogliastra",
+      "priority": 72,
+      "tags": [
+        "ogliastra",
+        "costa",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-cardedu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Cardedu"
+    },
+    {
+      "name": "Guspini",
+      "slug": "guspini",
+      "officialAreaId": "prov-medio-campidano",
+      "primaryHubId": "hub-medio-campidano",
+      "priority": 72,
+      "tags": [
+        "medio campidano"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-guspini/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Guspini"
+    },
+    {
+      "name": "Portoscuso",
+      "slug": "portoscuso",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 72,
+      "tags": [
+        "sulcis",
+        "costa"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-portoscuso/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Portoscuso"
+    },
+    {
+      "name": "S'Archittu",
+      "slug": "sarchittu",
+      "officialAreaId": "prov-oristano",
+      "primaryHubId": "hub-oristano",
+      "priority": 72,
+      "tags": [
+        "oristanese",
+        "turismo"
+      ],
+      "aliases": [
+        "S Archittu"
+      ],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sarchittu/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a S'Archittu"
+    },
+    {
+      "name": "Sant'Antioco",
+      "slug": "sant-antioco",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 72,
+      "tags": [
+        "sulcis",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sant-antioco/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Sant'Antioco"
+    },
+    {
+      "name": "Sennori",
+      "slug": "sennori",
+      "officialAreaId": "cm-sassari",
+      "primaryHubId": "hub-sassari",
+      "priority": 72,
+      "tags": [
+        "nord ovest"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-sennori/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Sennori"
+    },
+    {
+      "name": "Uta",
+      "slug": "uta",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 72,
+      "tags": [
+        "area cagliaritana"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-uta/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Uta"
+    },
+    {
+      "name": "Carloforte",
+      "slug": "carloforte",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 70,
+      "tags": [
+        "sulcis",
+        "isola",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-carloforte/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Carloforte"
+    },
+    {
+      "name": "Masua",
+      "slug": "masua",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 70,
+      "tags": [
+        "iglesiente",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-masua/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Masua"
+    },
+    {
+      "name": "Nebida",
+      "slug": "nebida",
+      "officialAreaId": "prov-sulcis-iglesiente",
+      "primaryHubId": "hub-sulcis-iglesiente",
+      "priority": 70,
+      "tags": [
+        "iglesiente",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-nebida/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Nebida"
+    },
+    {
+      "name": "Pula",
+      "slug": "pula",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 70,
+      "tags": [
+        "costa sud",
+        "turismo"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-pula/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Pula"
+    },
+    {
+      "name": "San Vero Milis",
+      "slug": "san-vero-milis",
+      "officialAreaId": "prov-oristano",
+      "primaryHubId": "hub-oristano",
+      "priority": 70,
+      "tags": [
+        "oristanese",
+        "sinis"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-san-vero-milis/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a San Vero Milis"
+    },
+    {
+      "name": "Villa San Pietro",
+      "slug": "villa-san-pietro",
+      "officialAreaId": "cm-cagliari",
+      "primaryHubId": "hub-cagliari",
+      "priority": 68,
+      "tags": [
+        "costa sud"
+      ],
+      "aliases": [],
+      "localPageUrlPattern": "/{service-slug}-a-domicilio-villa-san-pietro/",
+      "defaultAnchorPattern": "{service-name-lowercase} a domicilio a Villa San Pietro"
+    }
+  ],
+  "sourceNotes": {
+    "officialAdministrativeAreas": [
+      "Regione Sardegna Autonomie: province e città metropolitane, counts and current institutional structure.",
+      "ISTAT: new statistical codes for Sardegna territorial units.",
+      "Regione Sardegna Autonomie news: articulation into Città metropolitane di Cagliari e Sassari and Province di Nuoro, Oristano, Gallura Nord-Est Sardegna, Ogliastra, Sulcis Iglesiente e Medio Campidano."
+    ],
+    "municipalities": [
+      "Starter priority list for SEO production, not a complete 377-comune registry.",
+      "Before mass generation, extend this section from official SITUAS/Regione dataset.",
+      "Expanded with priority tourism and coastal localities for local-service SEO coverage, including villas, B&B and short-rental demand zones."
+    ]
+  }
+}

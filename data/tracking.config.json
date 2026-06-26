@@ -1,0 +1,60 @@
+{
+  "_file": "data/tracking.config.json",
+  "_purpose": "Central tracking configuration for LavaggioMaterassi. Keep IDs here so pages do not need to be edited one by one.",
+  "_status": "Tracking scaffold ready. External analytics and ads tags disabled until new LavaggioMaterassi IDs are inserted.",
+  "trackingEnabled": true,
+  "debug": false,
+  "site": {
+    "brand": "LavaggioMaterassi",
+    "baseUrl": "https://www.lavaggiomaterassi.com",
+    "country": "IT",
+    "language": "it-IT"
+  },
+  "consent": {
+    "consentModeEnabled": true,
+    "defaultState": {
+      "ad_storage": "denied",
+      "ad_user_data": "denied",
+      "ad_personalization": "denied",
+      "analytics_storage": "denied",
+      "functionality_storage": "granted",
+      "security_storage": "granted"
+    },
+    "waitForUpdateMilliseconds": 500,
+    "region": [
+      "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO"
+    ]
+  },
+  "googleTagManager": {
+    "enabled": false,
+    "containerId": ""
+  },
+  "googleAnalytics4": {
+    "enabled": false,
+    "measurementId": ""
+  },
+  "googleAds": {
+    "enabled": false,
+    "conversionId": "",
+    "conversionLabel": ""
+  },
+  "metaPixel": {
+    "enabled": false,
+    "pixelId": ""
+  },
+  "events": {
+    "trackPhoneClicks": true,
+    "trackWhatsappClicks": true,
+    "trackEmailClicks": true,
+    "phoneEventName": "phone_click",
+    "whatsappEventName": "whatsapp_click",
+    "emailEventName": "email_click"
+  },
+  "notesForPier": [
+    "Use a dedicated GA4 property for lavaggiomaterassi.com unless intentionally tracking multiple related domains in the same property.",
+    "Consent Mode remains denied by default for analytics and ads until the user accepts or updates cookie preferences.",
+    "Google Ads, Meta Pixel, GA4 and Google Tag Manager are disabled for now.",
+    "When IDs change, edit only this file and keep every HTML page untouched.",
+    "Use DNS verification for Google Search Console where possible, not an HTML tag."
+  ]
+}

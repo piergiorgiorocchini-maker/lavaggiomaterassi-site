@@ -1,0 +1,229 @@
+{
+  "_file": "data/service.lavaggio-materassi.json",
+  "_purpose": "Service-level content and generation rules for LavaggioMaterassi local SEO pages. Reusable with geo.sardegna.json and future geo files.",
+  "_status": "v1 starter-production for LavaggioMaterassi. Use this source before building hub/locality templates and generator.",
+  "serviceId": "lavaggio-materassi",
+  "brand": "LavaggioMaterassi",
+  "language": "it-IT",
+  "country": "IT",
+  "primaryService": {
+    "name": "Lavaggio materassi a domicilio",
+    "slugBase": "lavaggio-materassi",
+    "hubSlugPattern": "lavaggio-materassi-{hubSlug}",
+    "localitySlugPattern": "lavaggio-materassi-a-domicilio-{citySlug}",
+    "searchIntent": [
+      "lavaggio materassi a domicilio",
+      "igienizzazione materassi",
+      "pulizia materasso",
+      "rimozione acari materasso",
+      "lavaggio materassi Sardegna",
+      "lavaggio materasso a domicilio",
+      "pulizia materassi a domicilio"
+    ]
+  },
+  "secondaryServices": [
+    {
+      "id": "pulizia-divani",
+      "name": "Lavaggio divani a domicilio",
+      "keywords": [
+        "lavaggio divani a domicilio",
+        "pulizia divani",
+        "igienizzazione divani",
+        "smacchiatura divani"
+      ]
+    },
+    {
+      "id": "pulizia-tappeti",
+      "name": "Pulizia tappeti a domicilio",
+      "keywords": [
+        "pulizia tappeti a domicilio",
+        "lavaggio tappeti",
+        "igienizzazione tappeti"
+      ]
+    },
+    {
+      "id": "lavaggio-moquette",
+      "name": "Lavaggio moquette",
+      "keywords": [
+        "lavaggio moquette",
+        "pulizia moquette",
+        "igienizzazione moquette"
+      ]
+    }
+  ],
+  "globalCta": {
+    "primaryLabel": "Chiama ora",
+    "primaryHrefType": "phone",
+    "secondaryLabel": "Scrivi su WhatsApp",
+    "secondaryHrefType": "whatsapp",
+    "note": "Ti risponderà Piergiorgio per un preventivo gratuito e personalizzato.",
+    "whatsappText": "Ciao Piergiorgio, vorrei un preventivo gratuito per lavaggio materassi a domicilio. Posso inviarti alcune foto?"
+  },
+  "copyBlocks": {
+    "hero": {
+      "hubH1Pattern": "Lavaggio materassi a domicilio a {hubName}",
+      "localityH1Pattern": "Lavaggio materassi a domicilio a {cityName}",
+      "hubLeadPattern": "Hai un materasso da igienizzare, macchie da trattare o odori persistenti a {hubName} e nelle zone vicine? Chiama o scrivi su WhatsApp, invia alcune foto e ricevi un preventivo gratuito e personalizzato.",
+      "localityLeadPattern": "Hai un materasso da igienizzare, macchie da trattare o odori persistenti a {cityName}? Chiama o scrivi su WhatsApp, invia alcune foto e ricevi un preventivo gratuito e personalizzato per il lavaggio a domicilio."
+    },
+    "servicesIntro": {
+      "title": "Per materassi e tessili imbottiti difficili da lavare da soli",
+      "bodyPattern": "Il servizio è pensato per chi vuole lavare, igienizzare e rinfrescare materassi, divani, tappeti e moquette senza trasportarli. LavaggioMaterassi lavora da oltre 10 anni nel trattamento professionale dei tessili a domicilio in Sardegna."
+    },
+    "extractionSection": {
+      "enabled": true,
+      "eyebrow": "Quello che non vedi",
+      "title": "Ecco cosa possiamo estrarre da materassi e tessili imbottiti",
+      "body": [
+        "La superficie del materasso è solo la parte visibile del problema. Con il tempo, l’umidità, la polvere, il sudore, gli odori, i residui organici e lo sporco quotidiano penetrano nei tessuti e arrivano anche nelle imbottiture.",
+        "È lì che si crea un ambiente favorevole alla proliferazione di acari, batteri e cattivi odori. Per questo un semplice panno in superficie non basta: serve un trattamento professionale capace di lavare, aspirare e igienizzare in profondità.",
+        "Vuoi un materasso più pulito, più fresco e igienizzato, con un trattamento professionale a domicilio?"
+      ],
+      "imageId": "acqua-estrazione",
+      "ctaLabel": "Chiama ora",
+      "note": "Ti risponderà Piergiorgio per un preventivo gratuito e personalizzato."
+    },
+    "localTrust": {
+      "items": [
+        "Intervento a domicilio",
+        "Preventivo gratuito da foto",
+        "Oltre 10 anni nei tessili a domicilio",
+        "Trattamento smacchiante",
+        "Trattamento igienizzante"
+      ]
+    }
+  },
+  "seo": {
+    "titlePatterns": {
+      "hub": "Lavaggio Materassi a Domicilio a {hubName} | LavaggioMaterassi",
+      "locality": "Lavaggio Materassi a Domicilio a {cityName} | Preventivo Gratuito"
+    },
+    "descriptionPatterns": {
+      "hub": "Lavaggio e igienizzazione materassi a domicilio a {hubName} e zone vicine. Trattamento anti-acaro, smacchiante e igienizzante. Preventivo gratuito via WhatsApp.",
+      "locality": "Lavaggio materassi a domicilio a {cityName}. Igienizzazione, trattamento anti-acaro, odori e macchie. Invia foto su WhatsApp per un preventivo gratuito."
+    },
+    "canonicalPatterns": {
+      "hub": "{baseUrl}/lavaggio-materassi-{hubSlug}/",
+      "locality": "{baseUrl}/lavaggio-materassi-a-domicilio-{citySlug}/"
+    },
+    "ogImageDefaultId": "hero",
+    "faqSchemaEnabled": true,
+    "localBusinessSchemaEnabled": true,
+    "breadcrumbSchemaEnabled": true
+  },
+  "images": {
+    "_rule": "Keep original source images in assets/img. Generated pages may copy/rename images into assets/img/generated/{pageSlug}/ only when the generator is introduced.",
+    "sourceImages": [
+      {
+        "id": "hero",
+        "sourcePath": "assets/img/lavaggio-materassi-a-domicilio-hero.webp",
+        "role": "hero",
+        "generatedNamePatterns": {
+          "hub": "lavaggio-materassi-{hubSlug}-hero.webp",
+          "locality": "lavaggio-materassi-{citySlug}-hero.webp"
+        },
+        "altPatterns": {
+          "hub": "Lavaggio materassi a domicilio a {hubName}",
+          "locality": "Lavaggio materassi a domicilio a {cityName}"
+        }
+      },
+      {
+        "id": "materasso",
+        "sourcePath": "assets/img/lavaggio-materasso.webp",
+        "role": "service-card",
+        "generatedNamePatterns": {
+          "hub": "lavaggio-materasso-{hubSlug}.webp",
+          "locality": "lavaggio-materasso-{citySlug}.webp"
+        },
+        "altPatterns": {
+          "hub": "Igienizzazione materasso a domicilio a {hubName}",
+          "locality": "Igienizzazione materasso a domicilio a {cityName}"
+        }
+      },
+      {
+        "id": "materasso-risultato",
+        "sourcePath": "assets/img/pulizia-materasso-risultato.webp",
+        "role": "gallery",
+        "generatedNamePatterns": {
+          "hub": "pulizia-materasso-risultato-{hubSlug}.webp",
+          "locality": "pulizia-materasso-risultato-{citySlug}.webp"
+        },
+        "altPatterns": {
+          "hub": "Materasso pulito e igienizzato a domicilio a {hubName}",
+          "locality": "Materasso pulito e igienizzato a domicilio a {cityName}"
+        }
+      },
+      {
+        "id": "divano",
+        "sourcePath": "assets/img/lavaggio-divano-tessuto.webp",
+        "role": "secondary-service-card",
+        "generatedNamePatterns": {
+          "hub": "lavaggio-divano-{hubSlug}.webp",
+          "locality": "lavaggio-divano-{citySlug}.webp"
+        },
+        "altPatterns": {
+          "hub": "Lavaggio divano in tessuto a domicilio a {hubName}",
+          "locality": "Lavaggio divano in tessuto a domicilio a {cityName}"
+        }
+      },
+      {
+        "id": "acqua-estrazione",
+        "sourcePath": "assets/img/acqua-sporca-estratta-divani-materassi.webp",
+        "role": "extraction-section",
+        "generatedNamePatterns": {
+          "hub": "acqua-sporca-estratta-materassi-{hubSlug}.webp",
+          "locality": "acqua-sporca-estratta-materassi-{citySlug}.webp"
+        },
+        "altPatterns": {
+          "hub": "Acqua sporca estratta durante il lavaggio professionale di materassi a {hubName}",
+          "locality": "Acqua sporca estratta durante il lavaggio professionale di materassi a {cityName}"
+        }
+      }
+    ]
+  },
+  "internalLinking": {
+    "_purpose": "Rules for generator. Do not hardcode random city links.",
+    "homeLinksTo": "all-primary-hubs",
+    "hubLinksTo": [
+      "priority-localities-in-same-hub",
+      "neighbor-hubs-when-relevant",
+      "home"
+    ],
+    "localityLinksTo": [
+      "parent-hub",
+      "nearby-localities",
+      "home"
+    ],
+    "nearbyLocalityLimit": 5,
+    "anchorPatterns": {
+      "hub": [
+        "Lavaggio materassi {hubName}",
+        "Igienizzazione materassi {hubName}",
+        "Pulizia materassi a domicilio {hubName}"
+      ],
+      "locality": [
+        "Lavaggio materassi a domicilio {cityName}",
+        "Igienizzazione materassi a {cityName}",
+        "Pulizia materasso {cityName}"
+      ]
+    }
+  },
+  "faq": [
+    {
+      "questionPattern": "Quanto costa il lavaggio di un materasso a domicilio a {placeName}?",
+      "answerPattern": "Il costo dipende da dimensione, condizioni generali, presenza di macchie e zona di intervento. Puoi chiamare o inviare foto su WhatsApp per ricevere un preventivo gratuito e personalizzato."
+    },
+    {
+      "questionPattern": "Il trattamento aiuta contro acari, odori e sporco a {placeName}?",
+      "answerPattern": "Sì. Il trattamento aiuta a lavare e igienizzare il tessuto, ridurre odori e rimuovere sporco, polvere e residui accumulati. Il risultato dipende sempre dalle condizioni reali del materasso."
+    },
+    {
+      "questionPattern": "Pulite anche divani, tappeti e moquette a {placeName}?",
+      "answerPattern": "Sì. Oltre ai materassi, il servizio può coprire divani, tappeti e moquette a domicilio per abitazioni, uffici, B&B e case vacanza."
+    }
+  ],
+  "generationValidation": {
+    "firstHubOutput": "lavaggio-materassi-cagliari/index.html",
+    "firstLocalityOutput": "lavaggio-materassi-a-domicilio-selargius/index.html"
+  }
+}
