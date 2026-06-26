@@ -22,7 +22,36 @@
     },
     "waitForUpdateMilliseconds": 500,
     "region": [
-      "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO"
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE",
+      "IS",
+      "LI",
+      "NO"
     ]
   },
   "googleTagManager": {
@@ -30,8 +59,8 @@
     "containerId": ""
   },
   "googleAnalytics4": {
-    "enabled": false,
-    "measurementId": ""
+    "enabled": true,
+    "measurementId": "G-SC0NT1RXKJ"
   },
   "googleAds": {
     "enabled": false,
