@@ -20,7 +20,7 @@
       "functionality_storage": "granted",
       "security_storage": "granted"
     },
-    "waitForUpdateMilliseconds": 500,
+    "waitForUpdateMilliseconds": 0,
     "region": [
       "AT",
       "BE",
